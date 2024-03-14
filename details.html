@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <!-- Add Bootstrap CSS and JavaScript links here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse m-2" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="imeges/Screenshot%202023-08-27%20at%201.14.17%20AM.png" alt="User Image rounded-circle" class="img-fluid rounded-circle" style="width: 30px; height: 30px;">
+                        Ahmed
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Your Postes</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Add New</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end Navigation Bar -->
+
+    <!-- Details -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <!-- Product Title -->
+            <h1>Product Title</h1>
+
+            <!-- Product Description -->
+            <p>Description of the product goes here. This is a detailed description of the product's features, benefits, and specifications.</p>
+
+            <p>Published: October 30, 2023</p>
+            <p>Category: Electronics</p>
+            <p>Price: $100.00</p>
+        </div>
+    </div>
+</div>
+    <!-- end details -->
+
+    <!-- Comments  -->
+<div class="container mt-5">
+    <h3>Comments</h3>
+
+    <!-- Display Existing Comments -->
+    <div class="media mt-4">
+        <img src="user1.jpg" class="mr-3 rounded-circle" alt="User 1" style="width: 50px; height: 50px;">
+        <div class="media-body">
+            <h5 class="mt-0">User 1</h5>
+            <p>Comment 1 about the product.</p>
+        </div>
+    </div>
+
+    <div class="media mt-4">
+        <img src="user2.jpg" class="mr-3 rounded-circle" alt="User 2" style="width: 50px; height: 50px;">
+        <div class="media-body">
+            <h5 class="mt-0">User 2</h5>
+            <p>Comment 2 about the product.</p>
+        </div>
+    </div>
+
+    <!-- Comment Submission Form -->
+    <h3 class="mt-5">Add a Comment</h3>
+    <form>
+        <div class="form-group">
+            <label for="userComment">Your Comment</label>
+            <textarea class="form-control" id="userComment" rows="4" placeholder="Enter your comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+    <!-- end Comments  -->
+
+    <!-- Related products -->
+
+<div class="container mt-5">
+    <h3>Related Products</h3>
+    <div class="row">
+        <!-- Related Product Cards (You can create product cards as needed) -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                       <div class="card-body">
+                           <!-- User Information -->
+                           <div class="d-flex align-items-center mb-3">
+                              <img src="imeges/Screenshot%202023-08-27%20at%201.14.17%20AM.png" alt="User Image rounded-circle" class="img-fluid rounded-circle" style="width: 30px; height: 30px;">
+                              <p class="user-name ml-2 mb-0">Ahmed</p>
+                           </div>
+
+                            <!-- Product Details -->
+                           <h5 class="card-title">Product Title</h5>
+                           <p class="card-text">Description of the product goes here.</p>
+
+                            <!-- Publication Date and Category -->
+                           <p class="card-text"><small class="text-muted">Published on October 30, 2023</small></p>
+                           <p class="card-text"><small class="text-muted">Category: Electronics</small></p>
+                           <p class="card-text"><small class="text-muted">Prise: 1000 </small></p>
+                                    <!-- Buy Now Button -->
+                           <a href="#" class="btn btn-primary">Show Now</a>
+                       </div>
+                    </div>
+        </div>
+        <!-- Add more related product cards here -->
+    </div>
+</div>
+
+    <!-- end Related products -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
